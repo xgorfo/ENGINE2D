@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/Cellar/sfml/3.0.1/include -I/Users/xgorfo/Projects/ENGINE2D-C++/include
+CXX_INCLUDES = -I/Users/xgorfo/Projects/ENGINE2D-C++/include -isystem /opt/homebrew/opt/sfml@2/include
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64
 

@@ -222,6 +222,9 @@ MainEngine_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MainEngine_SOURCE_DIR:STATIC=/Users/xgorfo/Projects/ENGINE2D-C++
 
+//Path to a file.
+SFML_DOC_DIR:PATH=/opt/homebrew/share/doc/SFML
+
 
 ########################
 # INTERNAL cache entries

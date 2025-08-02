@@ -85,12 +85,12 @@ clean: CMakeFiles/MainEngine.dir/clean
 CMakeFiles/MainEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target MainEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target MainEngine"
 .PHONY : CMakeFiles/MainEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MainEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MainEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles 0
 .PHONY : CMakeFiles/MainEngine.dir/rule
@@ -102,7 +102,7 @@ MainEngine: CMakeFiles/MainEngine.dir/rule
 # codegen rule for target.
 CMakeFiles/MainEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Finished codegen for target MainEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target MainEngine"
 .PHONY : CMakeFiles/MainEngine.dir/codegen
 
 # clean rule for target.

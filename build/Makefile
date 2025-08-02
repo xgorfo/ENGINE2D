@@ -201,78 +201,6 @@ src/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Camera.cpp.s
 .PHONY : src/Camera.cpp.s
 
-src/Engine.o: src/Engine.cpp.o
-.PHONY : src/Engine.o
-
-# target to build an object file
-src/Engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Engine.cpp.o
-.PHONY : src/Engine.cpp.o
-
-src/Engine.i: src/Engine.cpp.i
-.PHONY : src/Engine.i
-
-# target to preprocess a source file
-src/Engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Engine.cpp.i
-.PHONY : src/Engine.cpp.i
-
-src/Engine.s: src/Engine.cpp.s
-.PHONY : src/Engine.s
-
-# target to generate assembly for a file
-src/Engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Engine.cpp.s
-.PHONY : src/Engine.cpp.s
-
-src/Entity.o: src/Entity.cpp.o
-.PHONY : src/Entity.o
-
-# target to build an object file
-src/Entity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Entity.cpp.o
-.PHONY : src/Entity.cpp.o
-
-src/Entity.i: src/Entity.cpp.i
-.PHONY : src/Entity.i
-
-# target to preprocess a source file
-src/Entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Entity.cpp.i
-.PHONY : src/Entity.cpp.i
-
-src/Entity.s: src/Entity.cpp.s
-.PHONY : src/Entity.s
-
-# target to generate assembly for a file
-src/Entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Entity.cpp.s
-.PHONY : src/Entity.cpp.s
-
-src/Matrix2x2.o: src/Matrix2x2.cpp.o
-.PHONY : src/Matrix2x2.o
-
-# target to build an object file
-src/Matrix2x2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Matrix2x2.cpp.o
-.PHONY : src/Matrix2x2.cpp.o
-
-src/Matrix2x2.i: src/Matrix2x2.cpp.i
-.PHONY : src/Matrix2x2.i
-
-# target to preprocess a source file
-src/Matrix2x2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Matrix2x2.cpp.i
-.PHONY : src/Matrix2x2.cpp.i
-
-src/Matrix2x2.s: src/Matrix2x2.cpp.s
-.PHONY : src/Matrix2x2.s
-
-# target to generate assembly for a file
-src/Matrix2x2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Matrix2x2.cpp.s
-.PHONY : src/Matrix2x2.cpp.s
-
 src/Renderer.o: src/Renderer.cpp.o
 .PHONY : src/Renderer.o
 
@@ -435,15 +363,6 @@ help:
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
-	@echo "... src/Engine.o"
-	@echo "... src/Engine.i"
-	@echo "... src/Engine.s"
-	@echo "... src/Entity.o"
-	@echo "... src/Entity.i"
-	@echo "... src/Entity.s"
-	@echo "... src/Matrix2x2.o"
-	@echo "... src/Matrix2x2.i"
-	@echo "... src/Matrix2x2.s"
 	@echo "... src/Renderer.o"
 	@echo "... src/Renderer.i"
 	@echo "... src/Renderer.s"

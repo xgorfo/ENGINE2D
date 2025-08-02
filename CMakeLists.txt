@@ -4,21 +4,28 @@ project(MainEngine)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Указываем путь до SFML вручную
-include_directories(/opt/homebrew/Cellar/sfml/3.0.1/include)
-link_directories(/opt/homebrew/Cellar/sfml/3.0.1/lib)
+# Указываем путь к SFML 2.6.2 вручную
+set(SFML_DIR "/opt/homebrew/opt/sfml@2/lib/cmake/SFML")
 
-# Все исходники проекта
-file(GLOB_RECURSE SOURCES "src/*.cpp")
-file(GLOB_RECURSE HEADERS "include/*.h")
+find_package(SFML REQUIRED COMPONENTS graphics window system)
 
-add_executable(MainEngine ${SOURCES} ${HEADERS})
+# Здесь путь к файлам указывается корректно
+add_executable(MainEngine
+    src/main.cpp
+    src/Application.cpp
+    src/Runtime.cpp
+    src/View.cpp
+    src/Renderer.cpp
+    src/TriangleEntity.cpp
+    src/Vector2D.cpp
+    src/Basis.cpp
+    src/Camera.cpp
+)
 
 target_include_directories(MainEngine PRIVATE include)
 
-# Линкуем вручную SFML 3.0.1 библиотеки
 target_link_libraries(MainEngine
-    sfml-graphics.3.0.1
-    sfml-window.3.0.1
-    sfml-system.3.0.1
+    sfml-graphics
+    sfml-window
+    sfml-system
 )
