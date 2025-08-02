@@ -2,14 +2,14 @@
 #include <vector>
 #include <memory>
 #include "Entity.h"
-
-class Renderer;
+#include "Renderer.h"
 
 class View {
-public:
-    void addEntity(std::shared_ptr<Entity> entity);
-    void update(float dt);
-    void render(Renderer& renderer);
-private:
     std::vector<std::shared_ptr<Entity>> entities;
+
+public:
+    void addEntity(std::shared_ptr<Entity> entity) {
+        entities.push_back(entity);
+    }
+    void render(Renderer& renderer);
 };

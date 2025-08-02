@@ -5,17 +5,13 @@
 #include "Renderer.h"
 #include <SFML/Graphics.hpp>
 
-class TriangleEntity : public Entity {
+class Player : public Entity {
 public:
-    TriangleEntity(const Vector2D& pos);
+    Player();
     void update(float dt) override;
     void render(Renderer& renderer) override;
 
-    void setVelocity(const Vector2D& vel);
-    Vector2D getVelocity() const;
-
 private:
     Vector2D position;
-    Vector2D velocity;
     sf::Color color;
 };

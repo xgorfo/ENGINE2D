@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MainEngine.dir/src/Basis.cpp.o.d"
   "CMakeFiles/MainEngine.dir/src/Camera.cpp.o"
   "CMakeFiles/MainEngine.dir/src/Camera.cpp.o.d"
+  "CMakeFiles/MainEngine.dir/src/Player.cpp.o"
+  "CMakeFiles/MainEngine.dir/src/Player.cpp.o.d"
   "CMakeFiles/MainEngine.dir/src/Renderer.cpp.o"
   "CMakeFiles/MainEngine.dir/src/Renderer.cpp.o.d"
   "CMakeFiles/MainEngine.dir/src/Runtime.cpp.o"

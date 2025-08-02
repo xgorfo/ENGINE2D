@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp" "CMakeFiles/MainEngine.dir/src/Application.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Application.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Basis.cpp" "CMakeFiles/MainEngine.dir/src/Basis.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Basis.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Camera.cpp" "CMakeFiles/MainEngine.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Camera.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp" "CMakeFiles/MainEngine.dir/src/Player.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Player.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Renderer.cpp" "CMakeFiles/MainEngine.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Renderer.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Runtime.cpp" "CMakeFiles/MainEngine.dir/src/Runtime.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Runtime.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/TriangleEntity.cpp" "CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.o.d"

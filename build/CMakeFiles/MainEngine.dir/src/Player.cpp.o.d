@@ -1,5 +1,8 @@
-CMakeFiles/MainEngine.dir/src/Renderer.cpp.o: \
-  /Users/xgorfo/Projects/ENGINE2D-C++/src/Renderer.cpp \
+CMakeFiles/MainEngine.dir/src/Player.cpp.o: \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/include/Player.h \
+  /Users/xgorfo/Projects/ENGINE2D-C++/include/Entity.h \
+  /Users/xgorfo/Projects/ENGINE2D-C++/include/Vector2D.h \
   /Users/xgorfo/Projects/ENGINE2D-C++/include/Renderer.h \
   /opt/homebrew/opt/sfml@2/include/SFML/Graphics.hpp \
   /opt/homebrew/opt/sfml@2/include/SFML/Window.hpp \
@@ -1009,5 +1012,4 @@ CMakeFiles/MainEngine.dir/src/Renderer.cpp.o: \
   /opt/homebrew/opt/sfml@2/include/SFML/Graphics/Glsl.inl \
   /opt/homebrew/opt/sfml@2/include/SFML/Graphics/Sprite.hpp \
   /opt/homebrew/opt/sfml@2/include/SFML/Graphics/Text.hpp \
-  /opt/homebrew/opt/sfml@2/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Vector2D.h
+  /opt/homebrew/opt/sfml@2/include/SFML/Graphics/VertexBuffer.hpp

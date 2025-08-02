@@ -1,19 +1,17 @@
 #pragma once
+
 #include <SFML/Graphics.hpp>
-#include "Basis.h"
-#include "Vector2D.h"
 #include <vector>
+#include "Vector2D.h"
 
 class Renderer {
 public:
-    Renderer(sf::RenderWindow& window, const Basis& basis);
+    Renderer(sf::RenderWindow& window_);
     void clear();
     void display();
+    sf::Vector2f worldToScreen(const Vector2D& point) const;
     void drawPolygonWorld(const std::vector<Vector2D>& points, sf::Color color);
-    const Basis& getBasis() const;
-    sf::RenderWindow& getWindow();
+
 private:
     sf::RenderWindow& window;
-    Basis basis;
-    sf::Vector2f worldToScreen(const Vector2D& point) const;
 };

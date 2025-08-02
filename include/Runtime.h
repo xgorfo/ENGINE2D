@@ -1,25 +1,21 @@
 #pragma once
-#include <SFML/Graphics.hpp>
-#include "View.h"
-#include "Renderer.h"
-#include "Camera.h"
 
-class Renderer;
+#include <memory>
+#include <vector>
+#include "Entity.h"
+#include "Player.h"
+#include "TriangleEntity.h"
+#include "Renderer.h"
+#include <SFML/Graphics.hpp>
 
 class Runtime {
 public:
     Runtime();
-    ~Runtime();
+
     void run();
 
 private:
     sf::RenderWindow window;
-    View view;
-    Renderer* renderer;
-    Camera camera;
-
-    void processEvents();
-    void update(float dt);
-    void render();
-    bool running = true;
+    Renderer renderer;
+    std::vector<std::shared_ptr<Entity>> entities;
 };

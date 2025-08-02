@@ -1,10 +1,19 @@
 #pragma once
-class Vector2D {
-public:
-    float x, y;
-    Vector2D(float x = 0, float y = 0);
 
-    Vector2D operator+(const Vector2D& other) const;
-    Vector2D operator-(const Vector2D& other) const;
-    Vector2D operator*(float scalar) const;
+struct Vector2D {
+    float x, y;
+
+    Vector2D(float x_ = 0, float y_ = 0) : x(x_), y(y_) {}
+
+    Vector2D operator+(const Vector2D& other) const {
+        return Vector2D(x + other.x, y + other.y);
+    }
+
+    Vector2D operator-(const Vector2D& other) const {
+        return Vector2D(x - other.x, y - other.y);
+    }
+
+    Vector2D operator*(float scalar) const {
+        return Vector2D(x * scalar, y * scalar);
+    }
 };
