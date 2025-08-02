@@ -205,7 +205,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
 //Path to a program.
-CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
+CMAKE_TAPI:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -221,12 +221,6 @@ MainEngine_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 MainEngine_SOURCE_DIR:STATIC=/Users/xgorfo/Projects/ENGINE2D-C++
-
-//The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=/opt/homebrew/Cellar/sfml/3.0.1/lib/cmake/SFML
-
-//Path to a file.
-SFML_DOC_DIR:PATH=/opt/homebrew/share/doc/SFML
 
 
 ########################

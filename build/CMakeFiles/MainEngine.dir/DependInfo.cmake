@@ -8,7 +8,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/xgorfo/Projects/ENGINE2D-C++/main.cpp" "CMakeFiles/MainEngine.dir/main.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/main.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp" "CMakeFiles/MainEngine.dir/src/Application.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Application.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Basis.cpp" "CMakeFiles/MainEngine.dir/src/Basis.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Basis.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Camera.cpp" "CMakeFiles/MainEngine.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Camera.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Engine.cpp" "CMakeFiles/MainEngine.dir/src/Engine.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Engine.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Entity.cpp" "CMakeFiles/MainEngine.dir/src/Entity.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Entity.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Matrix2x2.cpp" "CMakeFiles/MainEngine.dir/src/Matrix2x2.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Matrix2x2.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Renderer.cpp" "CMakeFiles/MainEngine.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Renderer.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Runtime.cpp" "CMakeFiles/MainEngine.dir/src/Runtime.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Runtime.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/TriangleEntity.cpp" "CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp" "CMakeFiles/MainEngine.dir/src/Vector2D.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/Vector2D.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/View.cpp" "CMakeFiles/MainEngine.dir/src/View.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/View.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/main.cpp" "CMakeFiles/MainEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/MainEngine.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
