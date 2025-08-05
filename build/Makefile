@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MainEngine
+# Target rules for targets named 2d-engine
 
 # Build rule for target.
-MainEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MainEngine
-.PHONY : MainEngine
+2d-engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2d-engine
+.PHONY : 2d-engine
 
 # fast build rule for target.
-MainEngine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/build
-.PHONY : MainEngine/fast
+2d-engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/build
+.PHONY : 2d-engine/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 src/Application.o: src/Application.cpp.o
 .PHONY : src/Application.o
 
 # target to build an object file
 src/Application.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Application.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Application.cpp.o
 .PHONY : src/Application.cpp.o
 
 src/Application.i: src/Application.cpp.i
@@ -142,7 +166,7 @@ src/Application.i: src/Application.cpp.i
 
 # target to preprocess a source file
 src/Application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Application.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Application.cpp.i
 .PHONY : src/Application.cpp.i
 
 src/Application.s: src/Application.cpp.s
@@ -150,159 +174,63 @@ src/Application.s: src/Application.cpp.s
 
 # target to generate assembly for a file
 src/Application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Application.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Application.cpp.s
 .PHONY : src/Application.cpp.s
 
-src/Basis.o: src/Basis.cpp.o
-.PHONY : src/Basis.o
+src/Obstacle.o: src/Obstacle.cpp.o
+.PHONY : src/Obstacle.o
 
 # target to build an object file
-src/Basis.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Basis.cpp.o
-.PHONY : src/Basis.cpp.o
+src/Obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o
+.PHONY : src/Obstacle.cpp.o
 
-src/Basis.i: src/Basis.cpp.i
-.PHONY : src/Basis.i
+src/Obstacle.i: src/Obstacle.cpp.i
+.PHONY : src/Obstacle.i
 
 # target to preprocess a source file
-src/Basis.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Basis.cpp.i
-.PHONY : src/Basis.cpp.i
+src/Obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i
+.PHONY : src/Obstacle.cpp.i
 
-src/Basis.s: src/Basis.cpp.s
-.PHONY : src/Basis.s
+src/Obstacle.s: src/Obstacle.cpp.s
+.PHONY : src/Obstacle.s
 
 # target to generate assembly for a file
-src/Basis.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Basis.cpp.s
-.PHONY : src/Basis.cpp.s
+src/Obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s
+.PHONY : src/Obstacle.cpp.s
 
-src/Camera.o: src/Camera.cpp.o
-.PHONY : src/Camera.o
+src/Transform.o: src/Transform.cpp.o
+.PHONY : src/Transform.o
 
 # target to build an object file
-src/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Camera.cpp.o
-.PHONY : src/Camera.cpp.o
+src/Transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Transform.cpp.o
+.PHONY : src/Transform.cpp.o
 
-src/Camera.i: src/Camera.cpp.i
-.PHONY : src/Camera.i
-
-# target to preprocess a source file
-src/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Camera.cpp.i
-.PHONY : src/Camera.cpp.i
-
-src/Camera.s: src/Camera.cpp.s
-.PHONY : src/Camera.s
-
-# target to generate assembly for a file
-src/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Camera.cpp.s
-.PHONY : src/Camera.cpp.s
-
-src/Player.o: src/Player.cpp.o
-.PHONY : src/Player.o
-
-# target to build an object file
-src/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Player.cpp.o
-.PHONY : src/Player.cpp.o
-
-src/Player.i: src/Player.cpp.i
-.PHONY : src/Player.i
+src/Transform.i: src/Transform.cpp.i
+.PHONY : src/Transform.i
 
 # target to preprocess a source file
-src/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Player.cpp.i
-.PHONY : src/Player.cpp.i
+src/Transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Transform.cpp.i
+.PHONY : src/Transform.cpp.i
 
-src/Player.s: src/Player.cpp.s
-.PHONY : src/Player.s
-
-# target to generate assembly for a file
-src/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Player.cpp.s
-.PHONY : src/Player.cpp.s
-
-src/Renderer.o: src/Renderer.cpp.o
-.PHONY : src/Renderer.o
-
-# target to build an object file
-src/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Renderer.cpp.o
-.PHONY : src/Renderer.cpp.o
-
-src/Renderer.i: src/Renderer.cpp.i
-.PHONY : src/Renderer.i
-
-# target to preprocess a source file
-src/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Renderer.cpp.i
-.PHONY : src/Renderer.cpp.i
-
-src/Renderer.s: src/Renderer.cpp.s
-.PHONY : src/Renderer.s
+src/Transform.s: src/Transform.cpp.s
+.PHONY : src/Transform.s
 
 # target to generate assembly for a file
-src/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Renderer.cpp.s
-.PHONY : src/Renderer.cpp.s
-
-src/Runtime.o: src/Runtime.cpp.o
-.PHONY : src/Runtime.o
-
-# target to build an object file
-src/Runtime.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Runtime.cpp.o
-.PHONY : src/Runtime.cpp.o
-
-src/Runtime.i: src/Runtime.cpp.i
-.PHONY : src/Runtime.i
-
-# target to preprocess a source file
-src/Runtime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Runtime.cpp.i
-.PHONY : src/Runtime.cpp.i
-
-src/Runtime.s: src/Runtime.cpp.s
-.PHONY : src/Runtime.s
-
-# target to generate assembly for a file
-src/Runtime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Runtime.cpp.s
-.PHONY : src/Runtime.cpp.s
-
-src/TriangleEntity.o: src/TriangleEntity.cpp.o
-.PHONY : src/TriangleEntity.o
-
-# target to build an object file
-src/TriangleEntity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.o
-.PHONY : src/TriangleEntity.cpp.o
-
-src/TriangleEntity.i: src/TriangleEntity.cpp.i
-.PHONY : src/TriangleEntity.i
-
-# target to preprocess a source file
-src/TriangleEntity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.i
-.PHONY : src/TriangleEntity.cpp.i
-
-src/TriangleEntity.s: src/TriangleEntity.cpp.s
-.PHONY : src/TriangleEntity.s
-
-# target to generate assembly for a file
-src/TriangleEntity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/TriangleEntity.cpp.s
-.PHONY : src/TriangleEntity.cpp.s
+src/Transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Transform.cpp.s
+.PHONY : src/Transform.cpp.s
 
 src/Vector2D.o: src/Vector2D.cpp.o
 .PHONY : src/Vector2D.o
 
 # target to build an object file
 src/Vector2D.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Vector2D.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o
 .PHONY : src/Vector2D.cpp.o
 
 src/Vector2D.i: src/Vector2D.cpp.i
@@ -310,7 +238,7 @@ src/Vector2D.i: src/Vector2D.cpp.i
 
 # target to preprocess a source file
 src/Vector2D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Vector2D.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i
 .PHONY : src/Vector2D.cpp.i
 
 src/Vector2D.s: src/Vector2D.cpp.s
@@ -318,56 +246,8 @@ src/Vector2D.s: src/Vector2D.cpp.s
 
 # target to generate assembly for a file
 src/Vector2D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/Vector2D.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s
 .PHONY : src/Vector2D.cpp.s
-
-src/View.o: src/View.cpp.o
-.PHONY : src/View.o
-
-# target to build an object file
-src/View.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/View.cpp.o
-.PHONY : src/View.cpp.o
-
-src/View.i: src/View.cpp.i
-.PHONY : src/View.i
-
-# target to preprocess a source file
-src/View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/View.cpp.i
-.PHONY : src/View.cpp.i
-
-src/View.s: src/View.cpp.s
-.PHONY : src/View.s
-
-# target to generate assembly for a file
-src/View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/View.cpp.s
-.PHONY : src/View.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainEngine.dir/build.make CMakeFiles/MainEngine.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -377,37 +257,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MainEngine"
+	@echo "... 2d-engine"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/Application.o"
 	@echo "... src/Application.i"
 	@echo "... src/Application.s"
-	@echo "... src/Basis.o"
-	@echo "... src/Basis.i"
-	@echo "... src/Basis.s"
-	@echo "... src/Camera.o"
-	@echo "... src/Camera.i"
-	@echo "... src/Camera.s"
-	@echo "... src/Player.o"
-	@echo "... src/Player.i"
-	@echo "... src/Player.s"
-	@echo "... src/Renderer.o"
-	@echo "... src/Renderer.i"
-	@echo "... src/Renderer.s"
-	@echo "... src/Runtime.o"
-	@echo "... src/Runtime.i"
-	@echo "... src/Runtime.s"
-	@echo "... src/TriangleEntity.o"
-	@echo "... src/TriangleEntity.i"
-	@echo "... src/TriangleEntity.s"
+	@echo "... src/Obstacle.o"
+	@echo "... src/Obstacle.i"
+	@echo "... src/Obstacle.s"
+	@echo "... src/Transform.o"
+	@echo "... src/Transform.i"
+	@echo "... src/Transform.s"
 	@echo "... src/Vector2D.o"
 	@echo "... src/Vector2D.i"
 	@echo "... src/Vector2D.s"
-	@echo "... src/View.o"
-	@echo "... src/View.i"
-	@echo "... src/View.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 

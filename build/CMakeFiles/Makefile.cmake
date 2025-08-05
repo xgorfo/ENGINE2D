@@ -11,11 +11,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.0.3/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.3/CMakeSystem.cmake"
-  "/opt/homebrew/opt/sfml@2/lib/cmake/SFML/SFMLConfig.cmake"
-  "/opt/homebrew/opt/sfml@2/lib/cmake/SFML/SFMLConfigDependencies.cmake"
-  "/opt/homebrew/opt/sfml@2/lib/cmake/SFML/SFMLConfigVersion.cmake"
-  "/opt/homebrew/opt/sfml@2/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
-  "/opt/homebrew/opt/sfml@2/lib/cmake/SFML/SFMLSharedTargets.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
@@ -147,5 +147,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/MainEngine.dir/DependInfo.cmake"
+  "CMakeFiles/2d-engine.dir/DependInfo.cmake"
   )

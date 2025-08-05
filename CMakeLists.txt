@@ -1,30 +1,18 @@
-cmake_minimum_required(VERSION 3.14)
-project(MainEngine)
+cmake_minimum_required(VERSION 3.10)
+project(2DEngine)
 
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
 
-set(SFML_DIR "/opt/homebrew/opt/sfml@2/lib/cmake/SFML")
+find_package(SFML 2.6 REQUIRED graphics window system)
 
-find_package(SFML REQUIRED COMPONENTS graphics window system)
+include_directories(include)
 
-add_executable(MainEngine
-    src/main.cpp
+add_executable(2d-engine
     src/Application.cpp
-    src/Runtime.cpp
-    src/View.cpp
-    src/Renderer.cpp
-    src/TriangleEntity.cpp
+    src/Obstacle.cpp
     src/Vector2D.cpp
-    src/Basis.cpp
-    src/Camera.cpp
-    src/Player.cpp
+    src/Transform.cpp
+    main.cpp
 )
 
-target_include_directories(MainEngine PRIVATE include)
-
-target_link_libraries(MainEngine
-    sfml-graphics
-    sfml-window
-    sfml-system
-)
+target_link_libraries(2d-engine sfml-graphics sfml-window sfml-system)
