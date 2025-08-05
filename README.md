@@ -1,4 +1,4 @@
-<img width="806" height="609" alt="Screenshot 2025-08-05 at 1 22 00 PM" src="https://github.com/user-attachments/assets/e3114903-e535-4e93-b68a-bc554a8ea760" /># 2D Platformer Game Engine
+ # 2D Platformer Game Engine
 
 This is a simple 2D platformer game engine built using **SFML** (Simple and Fast Multimedia Library) in **C++**. The game features a player-controlled character that can jump, avoid obstacles, and reach the end of a level within 30 seconds.
 
