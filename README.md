@@ -54,13 +54,16 @@ The game lasts for 30 seconds, and the player must avoid the obstacles during th
 
 <img width="793" height="624" alt="Screenshot 2025-08-05 at 1 20 49 PM" src="https://github.com/user-attachments/assets/5ed47ece-ee1f-448c-9188-e90f019ab1dc" />
 
+
 <img width="1562" height="1174" alt="image" src="https://github.com/user-attachments/assets/3d556037-fb46-4cf3-8020-5684eda20723" />
 
+
 <img width="806" height="609" alt="Screenshot 2025-08-05 at 1 22 00 PM" src="https://github.com/user-attachments/assets/90f68af6-5ab9-4c37-8728-32e6393e67df" />
+
 
 <img width="790" height="617" alt="Screenshot 2025-08-05 at 1 22 45 PM" src="https://github.com/user-attachments/assets/35ca5ba1-4817-4ba9-b2e2-64a605a1e829" />
 
 
 
-Made with а чо мы тут на английском разговорились :) ❤️
+Made with а чо мы тут на английском разговорились :) ❤
 
