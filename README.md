@@ -65,5 +65,5 @@ The game lasts for 30 seconds, and the player must avoid the obstacles during th
 
 
 
-Made with а чо мы тут на английском разговорились :) ❤
+Made with а чо мы тут на английском разговорились :)
 
