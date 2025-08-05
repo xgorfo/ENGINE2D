@@ -39,17 +39,17 @@ Run the game:
 ./2d-engine
 
 Game Controls
-Spacebar: Start the game, jump, or continue after winning/losing.
-R: Restart the game after it ends.
+- Spacebar: Start the game, jump, or continue after winning/losing.
+- R: Restart the game after it ends.
 How the Game Works
 The game consists of a simple platformer engine:
 The player (a green square) moves to the right automatically.
 The player can jump to avoid obstacles (red squares) that appear randomly on the screen.
 The game lasts for 30 seconds, and the player must avoid the obstacles during that time.
-If the player collides with any obstacle, the game ends and shows a "Game Over" message.
-If the player survives for 30 seconds, a "You Win" message will be displayed.
-Screenshots
-Here are some screenshots of the game in action:
+- If the player collides with any obstacle, the game ends and shows a "Game Over" message.
+- If the player survives for 30 seconds, a "You Win" message will be displayed.
+- Screenshots
+- Here are some screenshots of the game in action:
 
 
 <img width="793" height="624" alt="Screenshot 2025-08-05 at 1 20 49 PM" src="https://github.com/user-attachments/assets/5ed47ece-ee1f-448c-9188-e90f019ab1dc" />
