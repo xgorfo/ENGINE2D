@@ -35,8 +35,8 @@ cd build
 cmake ..
 make
 
-Run the game:
-./2d-engine
+Run the game (from the root folder):
+./build/2d-engine 
 
 Game Controls
 - Spacebar: Start the game, jump, or continue after winning/losing.
