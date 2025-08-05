@@ -48,7 +48,7 @@ The player can jump to avoid obstacles (red squares) that appear randomly on the
 The game lasts for 30 seconds, and the player must avoid the obstacles during that time.
 - If the player collides with any obstacle, the game ends and shows a "Game Over" message.
 - If the player survives for 30 seconds, a "You Win" message will be displayed.
-- Screenshots
+## Screenshots
 - Here are some screenshots of the game in action:
 
 
