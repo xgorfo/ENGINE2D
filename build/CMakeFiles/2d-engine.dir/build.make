@@ -72,66 +72,10 @@ include CMakeFiles/2d-engine.dir/flags.make
 CMakeFiles/2d-engine.dir/codegen:
 .PHONY : CMakeFiles/2d-engine.dir/codegen
 
-CMakeFiles/2d-engine.dir/src/Application.cpp.o: CMakeFiles/2d-engine.dir/flags.make
-CMakeFiles/2d-engine.dir/src/Application.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp
-CMakeFiles/2d-engine.dir/src/Application.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/2d-engine.dir/src/Application.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Application.cpp.o -MF CMakeFiles/2d-engine.dir/src/Application.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Application.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp
-
-CMakeFiles/2d-engine.dir/src/Application.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp > CMakeFiles/2d-engine.dir/src/Application.cpp.i
-
-CMakeFiles/2d-engine.dir/src/Application.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp -o CMakeFiles/2d-engine.dir/src/Application.cpp.s
-
-CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: CMakeFiles/2d-engine.dir/flags.make
-CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp
-CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o -MF CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp
-
-CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp > CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i
-
-CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp -o CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s
-
-CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o: CMakeFiles/2d-engine.dir/flags.make
-CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp
-CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o -MF CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp
-
-CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp > CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i
-
-CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp -o CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s
-
-CMakeFiles/2d-engine.dir/src/Transform.cpp.o: CMakeFiles/2d-engine.dir/flags.make
-CMakeFiles/2d-engine.dir/src/Transform.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp
-CMakeFiles/2d-engine.dir/src/Transform.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/2d-engine.dir/src/Transform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Transform.cpp.o -MF CMakeFiles/2d-engine.dir/src/Transform.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Transform.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp
-
-CMakeFiles/2d-engine.dir/src/Transform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Transform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp > CMakeFiles/2d-engine.dir/src/Transform.cpp.i
-
-CMakeFiles/2d-engine.dir/src/Transform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Transform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp -o CMakeFiles/2d-engine.dir/src/Transform.cpp.s
-
 CMakeFiles/2d-engine.dir/main.cpp.o: CMakeFiles/2d-engine.dir/flags.make
 CMakeFiles/2d-engine.dir/main.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/main.cpp
 CMakeFiles/2d-engine.dir/main.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/2d-engine.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/2d-engine.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/main.cpp.o -MF CMakeFiles/2d-engine.dir/main.cpp.o.d -o CMakeFiles/2d-engine.dir/main.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/main.cpp
 
 CMakeFiles/2d-engine.dir/main.cpp.i: cmake_force
@@ -142,24 +86,24 @@ CMakeFiles/2d-engine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/main.cpp -o CMakeFiles/2d-engine.dir/main.cpp.s
 
-CMakeFiles/2d-engine.dir/src/Player.cpp.o: CMakeFiles/2d-engine.dir/flags.make
-CMakeFiles/2d-engine.dir/src/Player.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp
-CMakeFiles/2d-engine.dir/src/Player.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/2d-engine.dir/src/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Player.cpp.o -MF CMakeFiles/2d-engine.dir/src/Player.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Player.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp
+CMakeFiles/2d-engine.dir/src/Application.cpp.o: CMakeFiles/2d-engine.dir/flags.make
+CMakeFiles/2d-engine.dir/src/Application.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp
+CMakeFiles/2d-engine.dir/src/Application.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/2d-engine.dir/src/Application.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Application.cpp.o -MF CMakeFiles/2d-engine.dir/src/Application.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Application.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp
 
-CMakeFiles/2d-engine.dir/src/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp > CMakeFiles/2d-engine.dir/src/Player.cpp.i
+CMakeFiles/2d-engine.dir/src/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Application.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp > CMakeFiles/2d-engine.dir/src/Application.cpp.i
 
-CMakeFiles/2d-engine.dir/src/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp -o CMakeFiles/2d-engine.dir/src/Player.cpp.s
+CMakeFiles/2d-engine.dir/src/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Application.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp -o CMakeFiles/2d-engine.dir/src/Application.cpp.s
 
 CMakeFiles/2d-engine.dir/src/Game.cpp.o: CMakeFiles/2d-engine.dir/flags.make
 CMakeFiles/2d-engine.dir/src/Game.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Game.cpp
 CMakeFiles/2d-engine.dir/src/Game.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/2d-engine.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/2d-engine.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Game.cpp.o -MF CMakeFiles/2d-engine.dir/src/Game.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Game.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Game.cpp
 
 CMakeFiles/2d-engine.dir/src/Game.cpp.i: cmake_force
@@ -170,26 +114,82 @@ CMakeFiles/2d-engine.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Game.cpp -o CMakeFiles/2d-engine.dir/src/Game.cpp.s
 
+CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: CMakeFiles/2d-engine.dir/flags.make
+CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp
+CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o -MF CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp
+
+CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp > CMakeFiles/2d-engine.dir/src/Obstacle.cpp.i
+
+CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp -o CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s
+
+CMakeFiles/2d-engine.dir/src/Player.cpp.o: CMakeFiles/2d-engine.dir/flags.make
+CMakeFiles/2d-engine.dir/src/Player.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp
+CMakeFiles/2d-engine.dir/src/Player.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/2d-engine.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Player.cpp.o -MF CMakeFiles/2d-engine.dir/src/Player.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Player.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp
+
+CMakeFiles/2d-engine.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp > CMakeFiles/2d-engine.dir/src/Player.cpp.i
+
+CMakeFiles/2d-engine.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp -o CMakeFiles/2d-engine.dir/src/Player.cpp.s
+
+CMakeFiles/2d-engine.dir/src/Transform.cpp.o: CMakeFiles/2d-engine.dir/flags.make
+CMakeFiles/2d-engine.dir/src/Transform.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp
+CMakeFiles/2d-engine.dir/src/Transform.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/2d-engine.dir/src/Transform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Transform.cpp.o -MF CMakeFiles/2d-engine.dir/src/Transform.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Transform.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp
+
+CMakeFiles/2d-engine.dir/src/Transform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Transform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp > CMakeFiles/2d-engine.dir/src/Transform.cpp.i
+
+CMakeFiles/2d-engine.dir/src/Transform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Transform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp -o CMakeFiles/2d-engine.dir/src/Transform.cpp.s
+
+CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o: CMakeFiles/2d-engine.dir/flags.make
+CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o: /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp
+CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o: CMakeFiles/2d-engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o -MF CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o.d -o CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o -c /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp
+
+CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp > CMakeFiles/2d-engine.dir/src/Vector2D.cpp.i
+
+CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp -o CMakeFiles/2d-engine.dir/src/Vector2D.cpp.s
+
 # Object files for target 2d-engine
 2d__engine_OBJECTS = \
-"CMakeFiles/2d-engine.dir/src/Application.cpp.o" \
-"CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o" \
-"CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o" \
-"CMakeFiles/2d-engine.dir/src/Transform.cpp.o" \
 "CMakeFiles/2d-engine.dir/main.cpp.o" \
+"CMakeFiles/2d-engine.dir/src/Application.cpp.o" \
+"CMakeFiles/2d-engine.dir/src/Game.cpp.o" \
+"CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o" \
 "CMakeFiles/2d-engine.dir/src/Player.cpp.o" \
-"CMakeFiles/2d-engine.dir/src/Game.cpp.o"
+"CMakeFiles/2d-engine.dir/src/Transform.cpp.o" \
+"CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o"
 
 # External object files for target 2d-engine
 2d__engine_EXTERNAL_OBJECTS =
 
-2d-engine: CMakeFiles/2d-engine.dir/src/Application.cpp.o
-2d-engine: CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o
-2d-engine: CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o
-2d-engine: CMakeFiles/2d-engine.dir/src/Transform.cpp.o
 2d-engine: CMakeFiles/2d-engine.dir/main.cpp.o
-2d-engine: CMakeFiles/2d-engine.dir/src/Player.cpp.o
+2d-engine: CMakeFiles/2d-engine.dir/src/Application.cpp.o
 2d-engine: CMakeFiles/2d-engine.dir/src/Game.cpp.o
+2d-engine: CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o
+2d-engine: CMakeFiles/2d-engine.dir/src/Player.cpp.o
+2d-engine: CMakeFiles/2d-engine.dir/src/Transform.cpp.o
+2d-engine: CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o
 2d-engine: CMakeFiles/2d-engine.dir/build.make
 2d-engine: /opt/homebrew/lib/libsfml-graphics.2.6.2.dylib
 2d-engine: /opt/homebrew/lib/libsfml-window.2.6.2.dylib

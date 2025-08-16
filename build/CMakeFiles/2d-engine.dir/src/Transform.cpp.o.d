@@ -1,7 +1,7 @@
 CMakeFiles/2d-engine.dir/src/Transform.cpp.o: \
   /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Transform.hpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Vector2D.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

@@ -1,6 +1,6 @@
 CMakeFiles/2d-engine.dir/src/Application.cpp.o: \
   /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Application.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Application.hpp \
   /opt/homebrew/include/SFML/Graphics.hpp \
   /opt/homebrew/include/SFML/Window.hpp \
   /opt/homebrew/include/SFML/System.hpp \
@@ -871,9 +871,9 @@ CMakeFiles/2d-engine.dir/src/Application.cpp.o: \
   /opt/homebrew/include/SFML/Graphics/Sprite.hpp \
   /opt/homebrew/include/SFML/Graphics/Text.hpp \
   /opt/homebrew/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Game.hpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Obstacle.hpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Player.hpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Vector2D.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Game.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Player.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream

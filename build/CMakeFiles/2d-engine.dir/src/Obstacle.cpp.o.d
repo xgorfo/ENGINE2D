@@ -1,6 +1,6 @@
 CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o: \
   /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp \
-  /Users/xgorfo/Projects/ENGINE2D-C++/include/Obstacle.hpp \
+  /Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.hpp \
   /opt/homebrew/include/SFML/Graphics.hpp \
   /opt/homebrew/include/SFML/Window.hpp \
   /opt/homebrew/include/SFML/System.hpp \
