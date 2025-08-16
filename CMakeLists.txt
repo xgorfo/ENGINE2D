@@ -13,6 +13,8 @@ add_executable(2d-engine
     src/Vector2D.cpp
     src/Transform.cpp
     main.cpp
+    src/Player.cpp
+    src/Game.cpp
 )
 
 target_link_libraries(2d-engine sfml-graphics sfml-window sfml-system)

@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/xgorfo/Projects/ENGINE2D-C++/main.cpp" "CMakeFiles/2d-engine.dir/main.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/main.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Application.cpp" "CMakeFiles/2d-engine.dir/src/Application.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/src/Application.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Game.cpp" "CMakeFiles/2d-engine.dir/src/Game.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/src/Game.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Obstacle.cpp" "CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/src/Obstacle.cpp.o.d"
+  "/Users/xgorfo/Projects/ENGINE2D-C++/src/Player.cpp" "CMakeFiles/2d-engine.dir/src/Player.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/src/Player.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Transform.cpp" "CMakeFiles/2d-engine.dir/src/Transform.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/src/Transform.cpp.o.d"
   "/Users/xgorfo/Projects/ENGINE2D-C++/src/Vector2D.cpp" "CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o" "gcc" "CMakeFiles/2d-engine.dir/src/Vector2D.cpp.o.d"
   )

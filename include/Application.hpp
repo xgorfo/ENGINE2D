@@ -1,10 +1,9 @@
-#ifndef APPLICATION_HPP
-#define APPLICATION_HPP
-
+#pragma once
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include "Obstacle.hpp"
+#include "Game.hpp"
+#include "Player.hpp"
 
+namespace Game {
 class Application {
 public:
     Application();
@@ -12,25 +11,26 @@ public:
     
 private:
     void processEvents();
-    void update();
+    void update(float deltaTime);
     void render();
-    void spawnObstacle();
-    void checkCollisions();
-    void restartGame();
     
-    sf::RenderWindow window;
-    sf::RectangleShape player;
-    sf::View camera;
+    sf::RenderWindow window_;
+    sf::View view_;
+    Player player_;
+    Game game_;
     
-    std::vector<Obstacle> obstacles;
-    float playerSpeed;
-    float playerVelocityY;
-    bool isJumping;
-    bool isGameOver;
-    bool playerWon;
-    bool isGameStarted;
+    sf::Font font_;
     
-    float elapsedTime;
+    enum class GameState {
+        Menu,
+        Playing,
+        GameOver
+    };
+    
+    GameState currentState_;
+    
+    void initializeFont();
+    sf::Text createMenuText() const;
+    sf::Text createGameOverText() const;
 };
-
-#endif
+}

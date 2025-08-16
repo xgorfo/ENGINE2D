@@ -1,18 +1,18 @@
-
-#ifndef TRANSFORM_HPP
-#define TRANSFORM_HPP
-
+#pragma once
 #include "Vector2D.hpp"
 
+namespace Game {
 class Transform {
 public:
-    Transform();
-    Vector2D applyTransformation(const Vector2D& point) const;
+    Transform() = default;
+    
+    Vector2D apply(const Vector2D& point) const;
     void setScale(float scaleX, float scaleY);
     void setRotation(float angle);
 
 private:
-    float scaleX, scaleY, rotation;
+    float scaleX_ = 1.0f;
+    float scaleY_ = 1.0f;
+    float rotation_ = 0.0f;
 };
-
-#endif
+}

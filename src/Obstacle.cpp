@@ -1,18 +1,20 @@
 #include "Obstacle.hpp"
 
+namespace Game {
 Obstacle::Obstacle() {
-    shape.setSize(sf::Vector2f(20.f, 20.f));
-    shape.setFillColor(sf::Color::Red);
+    shape_.setSize(sf::Vector2f(width_, height_));
+    shape_.setFillColor(sf::Color::Red);
 }
 
 void Obstacle::setPosition(float x, float y) {
-    shape.setPosition(x, y);
+    shape_.setPosition(x, y);
 }
 
-sf::RectangleShape Obstacle::getShape() const {
-    return shape;
+const sf::RectangleShape& Obstacle::getShape() const {
+    return shape_;
 }
 
 void Obstacle::move(float dx, float dy) {
-    shape.move(dx, dy);
+    shape_.move(dx, dy);
+}
 }

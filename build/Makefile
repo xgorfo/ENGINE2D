@@ -177,6 +177,30 @@ src/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Application.cpp.s
 .PHONY : src/Application.cpp.s
 
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
+
+# target to build an object file
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
 src/Obstacle.o: src/Obstacle.cpp.o
 .PHONY : src/Obstacle.o
 
@@ -200,6 +224,30 @@ src/Obstacle.s: src/Obstacle.cpp.s
 src/Obstacle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Obstacle.cpp.s
 .PHONY : src/Obstacle.cpp.s
+
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d-engine.dir/build.make CMakeFiles/2d-engine.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
 
 src/Transform.o: src/Transform.cpp.o
 .PHONY : src/Transform.o
@@ -264,9 +312,15 @@ help:
 	@echo "... src/Application.o"
 	@echo "... src/Application.i"
 	@echo "... src/Application.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
 	@echo "... src/Obstacle.o"
 	@echo "... src/Obstacle.i"
 	@echo "... src/Obstacle.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/Transform.o"
 	@echo "... src/Transform.i"
 	@echo "... src/Transform.s"

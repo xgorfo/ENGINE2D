@@ -1,8 +1,12 @@
-
 #include "Application.hpp"
+#include <stdexcept>
 
 int main() {
-    Application app;
-    app.run();
+    try {
+        Game::Application app;
+        app.run();
+    } catch (...) {
+        return -1;
+    }
     return 0;
 }

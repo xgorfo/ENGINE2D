@@ -5,6 +5,7 @@
         "queue": "cpp",
         "stack": "cpp",
         "ios": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "__bit_reference": "cpp"
     }
 }
