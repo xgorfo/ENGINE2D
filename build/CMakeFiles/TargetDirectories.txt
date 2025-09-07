@@ -1,3 +1,0 @@
-/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles/2d-engine.dir
-/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles/edit_cache.dir
-/Users/xgorfo/Projects/ENGINE2D-C++/build/CMakeFiles/rebuild_cache.dir
