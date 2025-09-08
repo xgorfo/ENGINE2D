@@ -22,3 +22,4 @@ target_link_libraries(2d-engine
     sfml-window 
     sfml-system
 )
+

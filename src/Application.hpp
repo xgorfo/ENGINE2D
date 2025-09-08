@@ -14,6 +14,10 @@ private:
     void update(float deltaTime);
     void render();
     
+    void processMenuEvents(const sf::Event& event);
+    void processPlayingEvents(const sf::Event& event);
+    void processGameOverEvents(const sf::Event& event);
+    
     sf::RenderWindow window_;
     sf::View view_;
     Player player_;
@@ -21,16 +25,17 @@ private:
     
     sf::Font font_;
     
-    enum class GameState {
+    enum class ApplicationState {
         Menu,
         Playing,
         GameOver
     };
     
-    GameState currentState_;
+    ApplicationState currentState_ = ApplicationState::Menu;
     
-    void initializeFont();
+    static sf::Font loadFont();
     sf::Text createMenuText() const;
-    sf::Text createGameOverText() const;
+    sf::Text createGameEndText() const;
 };
 }
+

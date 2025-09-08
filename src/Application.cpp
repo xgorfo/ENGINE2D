@@ -5,12 +5,10 @@ namespace Game {
 Application::Application() : 
     window_(sf::VideoMode(800, 600), "2D Engine"),
     view_(sf::Vector2f(400.f, 300.f), sf::Vector2f(800.f, 600.f)),
-    currentState_(GameState::Menu) {
+    font_(loadFont()) {
     
     window_.setView(view_);
     window_.setFramerateLimit(60);
-    
-    initializeFont();
 }
 
 void Application::run() {
@@ -20,7 +18,7 @@ void Application::run() {
         float deltaTime = clock.restart().asSeconds();
         processEvents();
         
-        if (currentState_ == GameState::Playing) {
+        if (currentState_ == ApplicationState::Playing) {
             update(deltaTime);
         }
         
@@ -35,21 +33,39 @@ void Application::processEvents() {
             window_.close();
         }
         
-        if (event.type == sf::Event::KeyPressed) {
-            if (event.key.code == sf::Keyboard::Space) {
-                if (currentState_ == GameState::Menu) {
-                    currentState_ = GameState::Playing;
-                } else if (currentState_ == GameState::Playing) {
-                    player_.jump();
-                }
-            }
-            
-            if (event.key.code == sf::Keyboard::R && currentState_ == GameState::GameOver) {
-                player_.reset();
-                game_.reset();
-                currentState_ = GameState::Playing;
-            }
+        switch (currentState_) {
+            case ApplicationState::Menu:
+                processMenuEvents(event);
+                break;
+            case ApplicationState::Playing:
+                processPlayingEvents(event);
+                break;
+            case ApplicationState::GameOver:
+                processGameOverEvents(event);
+                break;
         }
+    }
+}
+
+void Application::processMenuEvents(const sf::Event& event) {
+    if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space) {
+        currentState_ = ApplicationState::Playing;
+    }
+}
+
+void Application::processPlayingEvents(const sf::Event& event) {
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::Space) {
+            player_.jump();
+        }
+    }
+}
+
+void Application::processGameOverEvents(const sf::Event& event) {
+    if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::R) {
+        player_.reset();
+        game_.reset();
+        currentState_ = ApplicationState::Playing;
     }
 }
 
@@ -57,13 +73,13 @@ void Application::update(float deltaTime) {
     player_.update(deltaTime);
     game_.update(deltaTime);
     
-    if (game_.checkCollisions(player_)) {
-        game_.setGameOver(true);
-        currentState_ = GameState::GameOver;
+    if (game_.hasCollision(player_)) {
+        game_.setStatus(Game::Status::Lost);
+        currentState_ = ApplicationState::GameOver;
     }
     
-    if (game_.playerWon()) {
-        currentState_ = GameState::GameOver;
+    if (game_.getStatus() == Game::Status::Won) {
+        currentState_ = ApplicationState::GameOver;
     }
 }
 
@@ -71,33 +87,35 @@ void Application::render() {
     window_.clear(sf::Color::Black);
     
     switch (currentState_) {
-        case GameState::Menu:
+        case ApplicationState::Menu:
             window_.draw(createMenuText());
             break;
             
-        case GameState::Playing:
+        case ApplicationState::Playing:
             window_.draw(player_.getShape());
             for (const auto& obstacle : game_.getObstacles()) {
                 window_.draw(obstacle.getShape());
             }
             break;
             
-        case GameState::GameOver:
+        case ApplicationState::GameOver:
             window_.draw(player_.getShape());
             for (const auto& obstacle : game_.getObstacles()) {
                 window_.draw(obstacle.getShape());
             }
-            window_.draw(createGameOverText());
+            window_.draw(createGameEndText());
             break;
     }
     
     window_.display();
 }
 
-void Application::initializeFont() {
-    if (!font_.loadFromFile("assets/fonts/Lumos.ttf")) {
+sf::Font Application::loadFont() {
+    sf::Font font;
+    if (!font.loadFromFile("assets/fonts/Lumos.ttf")) {
         std::cerr << "Error loading font!" << std::endl;
     }
+    return font;
 }
 
 sf::Text Application::createMenuText() const {
@@ -114,12 +132,19 @@ sf::Text Application::createMenuText() const {
     return text;
 }
 
-sf::Text Application::createGameOverText() const {
+sf::Text Application::createGameEndText() const {
     sf::Text text;
     text.setFont(font_);
-    text.setString(game_.playerWon() ? "YOU WIN BRO" : "GAME OVER");
+    
+    if (game_.getStatus() == Game::Status::Won) {
+        text.setString("YOU WIN BRO");
+        text.setFillColor(sf::Color::Green);
+    } else {
+        text.setString("GAME OVER");
+        text.setFillColor(sf::Color::Red);
+    }
+    
     text.setCharacterSize(static_cast<int>(window_.getSize().x * 0.1f));
-    text.setFillColor(game_.playerWon() ? sf::Color::Green : sf::Color::Red);
     
     sf::FloatRect textRect = text.getLocalBounds();
     text.setOrigin(textRect.left + textRect.width / 2, textRect.top + textRect.height / 2);
@@ -128,3 +153,4 @@ sf::Text Application::createGameOverText() const {
     return text;
 }
 }
+

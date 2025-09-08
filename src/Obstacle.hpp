@@ -9,6 +9,8 @@ public:
     void setPosition(float x, float y);
     const sf::RectangleShape& getShape() const;
     void move(float dx, float dy);
+    bool isLeftOf(float x) const;
+    sf::Vector2f getPosition() const;
 
 private:
     sf::RectangleShape shape_;
@@ -17,3 +19,4 @@ private:
     static constexpr float height_ = 20.f;
 };
 }
+

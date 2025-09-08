@@ -17,4 +17,13 @@ const sf::RectangleShape& Obstacle::getShape() const {
 void Obstacle::move(float dx, float dy) {
     shape_.move(dx, dy);
 }
+
+bool Obstacle::isLeftOf(float x) const {
+    return shape_.getPosition().x + shape_.getSize().x < x;
 }
+
+sf::Vector2f Obstacle::getPosition() const {
+    return shape_.getPosition();
+}
+}
+

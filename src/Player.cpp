@@ -1,43 +1,58 @@
 #include "Player.hpp"
 
 namespace Game {
-Player::Player() : 
-    position_(50.f, 460.f), 
-    size_(40.f, 40.f), 
-    velocity_(0.f, 0.f), 
-    isJumping_(false) {}
+Player::Player() {
+    position_.x = 50.f;
+    position_.y = 460.f;
+    size_.x = 40.f;
+    size_.y = 40.f;
+    velocity_.x = 0.f;
+    velocity_.y = 0.f;
+}
 
 void Player::update(float deltaTime) {
-    if (isJumping_) {
+    if (state_ == State::Jumping || state_ == State::Falling) {
         position_.y += velocity_.y;
         velocity_.y += gravity_;
         
-        if (position_.y >= 460.f) {
-            position_.y = 460.f;
+        if (velocity_.y > 0) {
+            state_ = State::Falling;
+        }
+        
+        if (position_.y >= groundLevel_) {
+            position_.y = groundLevel_;
             velocity_.y = 0.f;
-            isJumping_ = false;
+            state_ = State::Grounded;
         }
     }
 }
 
 void Player::jump() {
-    if (!isJumping_) {
+    if (state_ == State::Grounded) {
         velocity_.y = jumpVelocity_;
-        isJumping_ = true;
+        state_ = State::Jumping;
     }
 }
 
 void Player::reset() {
     position_.x = 50.f;
-    position_.y = 460.f;
+    position_.y = groundLevel_;
     velocity_.x = 0.f;
     velocity_.y = 0.f;
-    isJumping_ = false;
+    state_ = State::Grounded;
 }
 
-const Vector2D& Player::getPosition() const { return position_; }
-const Vector2D& Player::getSize() const { return size_; }
-bool Player::isJumping() const { return isJumping_; }
+const Vector2D& Player::getPosition() const { 
+    return position_; 
+}
+
+const Vector2D& Player::getSize() const { 
+    return size_; 
+}
+
+Player::State Player::getState() const { 
+    return state_; 
+}
 
 void Player::setPosition(float x, float y) {
     position_.x = x;
@@ -52,3 +67,4 @@ sf::RectangleShape Player::getShape() const {
     return shape;
 }
 }
+
