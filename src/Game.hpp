@@ -12,29 +12,36 @@ public:
         Won,
         Lost
     };
-    
+
     Game();
-    
+
     void update(float deltaTime);
     void spawnObstacle();
     void reset();
-    
+
     bool hasCollision(const Player& player) const;
-    Status getStatus() const;
-    
+    Status status() const;
+
     void setStatus(Status status);
-    
-    const std::vector<Obstacle>& getObstacles() const;
-    float getElapsedTime() const;
+
+    const std::vector<Obstacle>& obstacles() const;
+    float elapsedTime() const;
+
+    float width() const { return width_; }
+    float height() const { return height_; }
+    float groundLevel() const { return groundLevel_; }
 
 private:
     std::vector<Obstacle> obstacles_;
     float elapsedTime_ = 0.f;
     Status status_ = Status::Running;
-    
-    static constexpr float obstacleSpawnChance_ = 1.f;
-    static constexpr float platformSpeed_ = 90.f;
-    static constexpr float gameDuration_ = 30.f;
+
+    float width_;
+    float height_;
+    float groundLevel_;
+    float obstacleSpawnChance_;
+    float platformSpeed_;
+    float duration_;
 };
 }
 

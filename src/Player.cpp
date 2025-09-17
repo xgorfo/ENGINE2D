@@ -1,9 +1,9 @@
 #include "Player.hpp"
 
 namespace Game {
-Player::Player() {
+Player::Player(float groundLevel) : groundLevel_(groundLevel) {
     position_.x = 50.f;
-    position_.y = 460.f;
+    position_.y = groundLevel_;
     size_.x = 40.f;
     size_.y = 40.f;
     velocity_.x = 0.f;
@@ -14,11 +14,11 @@ void Player::update(float deltaTime) {
     if (state_ == State::Jumping || state_ == State::Falling) {
         position_.y += velocity_.y;
         velocity_.y += gravity_;
-        
+
         if (velocity_.y > 0) {
             state_ = State::Falling;
         }
-        
+
         if (position_.y >= groundLevel_) {
             position_.y = groundLevel_;
             velocity_.y = 0.f;

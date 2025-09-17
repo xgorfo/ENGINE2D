@@ -3,12 +3,29 @@
 
 namespace Game {
 Application::Application() : 
-    window_(sf::VideoMode(800, 600), "2D Engine"),
-    view_(sf::Vector2f(400.f, 300.f), sf::Vector2f(800.f, 600.f)),
+    game_(),
+    player_(game_.groundLevel()),
+    window_(videoModeFor(game_), "2D Engine"),
+    view_(viewCenterFor(game_), viewSizeFor(game_)),
     font_(loadFont()) {
     
     window_.setView(view_);
     window_.setFramerateLimit(60);
+}
+
+sf::VideoMode Application::videoModeFor(const Game& game) {
+    return sf::VideoMode(
+        static_cast<unsigned int>(game.width()),
+        static_cast<unsigned int>(game.height())
+    );
+}
+
+sf::Vector2f Application::viewCenterFor(const Game& game) {
+    return sf::Vector2f(game.width() / 2, game.height() / 2);
+}
+
+sf::Vector2f Application::viewSizeFor(const Game& game) {
+    return sf::Vector2f(game.width(), game.height());
 }
 
 void Application::run() {
@@ -78,7 +95,7 @@ void Application::update(float deltaTime) {
         currentState_ = ApplicationState::GameOver;
     }
     
-    if (game_.getStatus() == Game::Status::Won) {
+    if (game_.status() == Game::Status::Won) {
         currentState_ = ApplicationState::GameOver;
     }
 }
@@ -87,27 +104,38 @@ void Application::render() {
     window_.clear(sf::Color::Black);
     
     switch (currentState_) {
-        case ApplicationState::Menu:
-            window_.draw(createMenuText());
+        case ApplicationState::Menu: {
+            auto text = createMenuText();
+            centerText(text);
+            window_.draw(text);
             break;
+        }
             
         case ApplicationState::Playing:
             window_.draw(player_.getShape());
-            for (const auto& obstacle : game_.getObstacles()) {
+            for (const auto& obstacle : game_.obstacles()) {
                 window_.draw(obstacle.getShape());
             }
             break;
             
         case ApplicationState::GameOver:
             window_.draw(player_.getShape());
-            for (const auto& obstacle : game_.getObstacles()) {
+            for (const auto& obstacle : game_.obstacles()) {
                 window_.draw(obstacle.getShape());
             }
-            window_.draw(createGameEndText());
+            auto text = createGameEndText();
+            centerText(text);
+            window_.draw(text);
             break;
     }
     
     window_.display();
+}
+
+void Application::centerText(sf::Text& text) const {
+    sf::FloatRect textRect = text.getLocalBounds();
+    text.setOrigin(textRect.left + textRect.width / 2, textRect.top + textRect.height / 2);
+    text.setPosition(game_.width() / 2, game_.height() / 2);
 }
 
 sf::Font Application::loadFont() {
@@ -122,13 +150,10 @@ sf::Text Application::createMenuText() const {
     sf::Text text;
     text.setFont(font_);
     text.setString("Press SPACE to start the game\n\nControls: SPACE - Jump\n\nRestart the game - R\n\nAvoid obstacles and reach the end!");
-    text.setCharacterSize(static_cast<int>(window_.getSize().x * 0.05f));
+    text.setCharacterSize(24);
     text.setFillColor(sf::Color::White);
-    
-    sf::FloatRect textRect = text.getLocalBounds();
-    text.setOrigin(textRect.left + textRect.width / 2, textRect.top + textRect.height / 2);
-    text.setPosition(window_.getSize().x / 2, window_.getSize().y / 2);
-    
+
+
     return text;
 }
 
@@ -136,7 +161,7 @@ sf::Text Application::createGameEndText() const {
     sf::Text text;
     text.setFont(font_);
     
-    if (game_.getStatus() == Game::Status::Won) {
+    if (game_.status() == Game::Status::Won) {
         text.setString("YOU WIN BRO");
         text.setFillColor(sf::Color::Green);
     } else {
@@ -144,12 +169,7 @@ sf::Text Application::createGameEndText() const {
         text.setFillColor(sf::Color::Red);
     }
     
-    text.setCharacterSize(static_cast<int>(window_.getSize().x * 0.1f));
-    
-    sf::FloatRect textRect = text.getLocalBounds();
-    text.setOrigin(textRect.left + textRect.width / 2, textRect.top + textRect.height / 2);
-    text.setPosition(window_.getSize().x / 2, window_.getSize().y / 2);
-    
+    text.setCharacterSize(48);
     return text;
 }
 }

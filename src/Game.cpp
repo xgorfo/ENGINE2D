@@ -3,12 +3,18 @@
 #include <algorithm>
 
 namespace Game {
-Game::Game() {}
+Game::Game() : 
+    width_(800.f),
+    height_(600.f),
+    groundLevel_(500.f),
+    obstacleSpawnChance_(1.f),
+    platformSpeed_(90.f),
+    duration_(30.f) {}
 
 void Game::update(float deltaTime) {
     elapsedTime_ += deltaTime;
     
-    if (elapsedTime_ >= gameDuration_ && status_ == Status::Running) {
+    if (elapsedTime_ >= duration_ && status_ == Status::Running) {
         status_ = Status::Won;
     }
     
@@ -29,14 +35,14 @@ void Game::update(float deltaTime) {
 void Game::spawnObstacle() {
     float x;
     if (obstacles_.empty()) {
-        x = 800.f;
+        x = width_;
     } else {
         x = obstacles_.back().getPosition().x + 240.f;
     }
     
-    float y = 460.f;
+
     Obstacle newObstacle;
-    newObstacle.setPosition(x, y);
+    newObstacle.setPosition(x, groundLevel_);
     obstacles_.push_back(std::move(newObstacle));
 }
 
@@ -55,7 +61,7 @@ bool Game::hasCollision(const Player& player) const {
     return false;
 }
 
-Game::Status Game::getStatus() const { 
+Game::Status Game::status() const { 
     return status_; 
 }
 
@@ -63,11 +69,11 @@ void Game::setStatus(Status status) {
     status_ = status; 
 }
 
-const std::vector<Obstacle>& Game::getObstacles() const { 
+const std::vector<Obstacle>& Game::obstacles() const { 
     return obstacles_; 
 }
 
-float Game::getElapsedTime() const { 
+float Game::elapsedTime() const { 
     return elapsedTime_; 
 }
 }
