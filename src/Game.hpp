@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "Obstacle.hpp"
 #include "Player.hpp"
+#include "Vector2D.hpp"
 
 namespace Game {
 class Game {
@@ -30,6 +31,7 @@ public:
     float width() const { return width_; }
     float height() const { return height_; }
     float groundLevel() const { return groundLevel_; }
+    Vector2D playerStartPosition() const { return playerStartPosition_; }
 
 private:
     std::vector<Obstacle> obstacles_;
@@ -39,8 +41,10 @@ private:
     float width_;
     float height_;
     float groundLevel_;
+    Vector2D playerStartPosition_;
     float obstacleSpawnChance_;
     float platformSpeed_;
+    float obstacleSpacing_;
     float duration_;
 };
 }

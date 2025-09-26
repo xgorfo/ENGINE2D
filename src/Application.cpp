@@ -3,29 +3,14 @@
 
 namespace Game {
 Application::Application() : 
-    game_(),
-    player_(game_.groundLevel()),
-    window_(videoModeFor(game_), "2D Engine"),
-    view_(viewCenterFor(game_), viewSizeFor(game_)),
-    font_(loadFont()) {
+    game_{},
+    player_{game_.playerStartPosition(), game_.groundLevel()},
+    window_{videoModeFor(game_), "2D Engine"},
+    view_{viewCenterFor(game_), viewSizeFor(game_)},
+    font_{loadFont()} {
     
     window_.setView(view_);
     window_.setFramerateLimit(60);
-}
-
-sf::VideoMode Application::videoModeFor(const Game& game) {
-    return sf::VideoMode(
-        static_cast<unsigned int>(game.width()),
-        static_cast<unsigned int>(game.height())
-    );
-}
-
-sf::Vector2f Application::viewCenterFor(const Game& game) {
-    return sf::Vector2f(game.width() / 2, game.height() / 2);
-}
-
-sf::Vector2f Application::viewSizeFor(const Game& game) {
-    return sf::Vector2f(game.width(), game.height());
 }
 
 void Application::run() {
@@ -80,7 +65,7 @@ void Application::processPlayingEvents(const sf::Event& event) {
 
 void Application::processGameOverEvents(const sf::Event& event) {
     if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::R) {
-        player_.reset();
+        player_.reset(game_.playerStartPosition());
         game_.reset();
         currentState_ = ApplicationState::Playing;
     }
@@ -112,17 +97,11 @@ void Application::render() {
         }
             
         case ApplicationState::Playing:
-            window_.draw(player_.getShape());
-            for (const auto& obstacle : game_.obstacles()) {
-                window_.draw(obstacle.getShape());
-            }
+            drawGameState();
             break;
             
         case ApplicationState::GameOver:
-            window_.draw(player_.getShape());
-            for (const auto& obstacle : game_.obstacles()) {
-                window_.draw(obstacle.getShape());
-            }
+            drawGameState();
             auto text = createGameEndText();
             centerText(text);
             window_.draw(text);
@@ -132,10 +111,40 @@ void Application::render() {
     window_.display();
 }
 
+void Application::drawGameState() {
+    drawPlayer();
+    drawGame();
+}
+
+void Application::drawPlayer() {
+    window_.draw(player_.getShape());
+}
+
+void Application::drawGame() {
+    for (const auto& obstacle : game_.obstacles()) {
+        window_.draw(obstacle.getShape());
+    }
+}
+
 void Application::centerText(sf::Text& text) const {
     sf::FloatRect textRect = text.getLocalBounds();
     text.setOrigin(textRect.left + textRect.width / 2, textRect.top + textRect.height / 2);
     text.setPosition(game_.width() / 2, game_.height() / 2);
+}
+
+sf::VideoMode Application::videoModeFor(const Game& game) {
+    return sf::VideoMode(
+        static_cast<unsigned int>(game.width()),
+        static_cast<unsigned int>(game.height())
+    );
+}
+
+sf::Vector2f Application::viewCenterFor(const Game& game) {
+    return sf::Vector2f(game.width() / 2, game.height() / 2);
+}
+
+sf::Vector2f Application::viewSizeFor(const Game& game) {
+    return sf::Vector2f(game.width(), game.height());
 }
 
 sf::Font Application::loadFont() {
@@ -152,8 +161,6 @@ sf::Text Application::createMenuText() const {
     text.setString("Press SPACE to start the game\n\nControls: SPACE - Jump\n\nRestart the game - R\n\nAvoid obstacles and reach the end!");
     text.setCharacterSize(24);
     text.setFillColor(sf::Color::White);
-
-
     return text;
 }
 

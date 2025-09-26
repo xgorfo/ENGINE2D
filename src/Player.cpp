@@ -1,14 +1,12 @@
 #include "Player.hpp"
 
 namespace Game {
-Player::Player(float groundLevel) : groundLevel_(groundLevel) {
-    position_.x = 50.f;
-    position_.y = groundLevel_;
-    size_.x = 40.f;
-    size_.y = 40.f;
-    velocity_.x = 0.f;
-    velocity_.y = 0.f;
-}
+Player::Player(const Vector2D& startPosition, float groundLevel)
+    : position_{startPosition},
+      size_{40.f, 40.f},
+      velocity_{0.f, 0.f},
+      startPosition_{startPosition},
+      groundLevel_(groundLevel) {}
 
 void Player::update(float deltaTime) {
     if (state_ == State::Jumping || state_ == State::Falling) {
@@ -34,12 +32,11 @@ void Player::jump() {
     }
 }
 
-void Player::reset() {
-    position_.x = 50.f;
-    position_.y = groundLevel_;
-    velocity_.x = 0.f;
-    velocity_.y = 0.f;
+void Player::reset(const Vector2D& startPosition) {
+    position_ = startPosition;
+    velocity_ = {0.f, 0.f};
     state_ = State::Grounded;
+    startPosition_ = startPosition;
 }
 
 const Vector2D& Player::getPosition() const { 

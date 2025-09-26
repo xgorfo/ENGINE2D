@@ -13,11 +13,18 @@ Vector2D& operator+=(Vector2D& first, Vector2D second) {
 }
 
 Vector2D operator*(Vector2D vec, float scalar) {
-    return Vector2D{vec.x * scalar, vec.y * scalar};
+    vec *= scalar;
+    return vec;
 }
 
 Vector2D operator*(float scalar, Vector2D vec) {
     return vec * scalar;
+}
+
+Vector2D& operator*=(Vector2D& vec, float scalar) {
+    vec.x *= scalar;
+    vec.y *= scalar;
+    return vec;
 }
 }
 
