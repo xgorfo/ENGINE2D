@@ -6,7 +6,6 @@ A simple 2D game engine built with C++ and SFML, demonstrating core game develop
 ![SFML](https://img.shields.io/badge/SFML-2.6.2-green.svg)
 ![CMake](https://img.shields.io/badge/CMake-3.10+-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
 ## Features
 
